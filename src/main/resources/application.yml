@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+# data source
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: testuser
+
+  # jpa properties
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+# logging
+logging:
+  level:
+    org.hibernate.SQL: debug
